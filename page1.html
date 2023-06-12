@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Страница 1</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/uikit.min.css" />
+   <script src="js/uikit.min.js"></script>
+   <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+   <header class="header">
+
+      <nav class="uk-navbar-container uk-padding-large uk-padding-remove-vertical" uk-navbar>
+         <div class="uk-navbar-left">
+            <a class="uk-logo" href="#">Logo</a>
+         </div>
+         <div class="uk-navbar-center">
+            <div class="uk-navbar uk-hidden@m">
+               <a href="#offcanvas-usage" uk-navbar-toggle-icon uk-toggle></a>
+            </div>
+            <ul class="uk-navbar-nav  uk-visible@m">
+               <li>
+                  <a href="#">Меню 1<span uk-navbar-parent-icon></span></a>
+                  <div class="uk-navbar-dropdown">
+                     <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Новый пункт<span class="uk-text-danger uk-margin-left">new</span></a></li>
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Пункт меню</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <a href="#">Меню 2<span uk-navbar-parent-icon></span></a>
+                  <div class="uk-navbar-dropdown">
+                     <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Новый пункт<span class="uk-text-danger uk-margin-left">new</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <a href="#">Меню 3<span uk-navbar-parent-icon></span></a>
+                  <div class="uk-navbar-dropdown">
+                     <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Новый пункт<span class="uk-text-danger uk-margin-left">new</span></a>
+                        </li>
+                        <li><a href="#">Пункт меню</a></li>
+                        <li><a href="#">Пункт меню</a></li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="uk-navbar-right">
+            <a href="#" class="uk-navbar-item uk-link-muted uk-link-toggle"><span uk-icon="user"
+                  class="uk-margin-small-right"></span>Username</a>
+            <div class="uk-navbar-dropdown">
+               <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Пункт меню</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#">Выйти</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+   </header>
+
+   <main>
+
+      <section class="uk-section uk-section-small">
+         <div class="uk-container uk-container-small uk-card uk-card-default" uk-height-viewport="expand: true"></div>
+      </section>
+
+   </main>
+
+   <aside id="offcanvas-usage" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+         <button class="uk-offcanvas-close" type="button" uk-close></button>
+         <p>Меню</p>
+         <ul uk-accordion="active: 0; multiple: true">
+            <li>
+               <a class="uk-accordion-title" href="#">Меню 1</a>
+               <ul class="uk-accordion-content">
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Новый пункт<span class="uk-text-danger uk-margin-left">new</span></a>
+                  </li>
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Пункт меню</a></li>
+               </ul>
+            </li>
+            <li>
+               <a class="uk-accordion-title" href="#">Меню 2</a>
+               <ul class="uk-accordion-content">
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Новый пункт<span class="uk-text-danger uk-margin-left">new</span></a>
+                  </li>
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Пункт меню</a></li>
+               </ul>
+            </li>
+            <li>
+               <a class="uk-accordion-title" href="#">Меню 3</a>
+               <ul class="uk-accordion-content">
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Новый пункт<span class="uk-text-danger uk-margin-left">new</span></a>
+                  </li>
+                  <li><a href="#">Пункт меню</a></li>
+                  <li><a href="#">Пункт меню</a></li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </aside>
+
+</body>
+
+</html>
